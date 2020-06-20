@@ -392,16 +392,14 @@ $EndComp
 $Comp
 L Device:Polyfuse_Small F1
 U 1 1 5EEFBAE0
-P 5850 1450
-F 0 "F1" V 5645 1450 50  0000 C CNN
-F 1 "500mA" V 5736 1450 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" H 5900 1250 50  0001 L CNN
-F 3 "~" H 5850 1450 50  0001 C CNN
-	1    5850 1450
+P 5850 1550
+F 0 "F1" V 5645 1550 50  0000 C CNN
+F 1 "500mA" V 5736 1550 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 5900 1350 50  0001 L CNN
+F 3 "~" H 5850 1550 50  0001 C CNN
+	1    5850 1550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5300 1450 5600 1450
 $Comp
 L power:VCC #PWR0111
 U 1 1 5EEFD5DA
@@ -413,11 +411,6 @@ F 3 "" H 5600 1400 50  0001 C CNN
 	1    5600 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 1450 5600 1400
-Connection ~ 5600 1450
-Wire Wire Line
-	5600 1450 5750 1450
 $Comp
 L power:+5V #PWR0112
 U 1 1 5EEFED5D
@@ -429,10 +422,6 @@ F 3 "" H 6200 1400 50  0001 C CNN
 	1    6200 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5950 1450 6200 1450
-Wire Wire Line
-	6200 1450 6200 1400
 Text GLabel 5300 1750 2    50   Input ~ 0
 D+
 Text GLabel 5300 1650 2    50   Input ~ 0
@@ -582,4 +571,20 @@ Text GLabel 8650 1900 2    50   Input ~ 0
 COL1
 Text GLabel 8650 2100 2    50   Input ~ 0
 ROW1
+Wire Wire Line
+	6750 2000 6750 1900
+Wire Wire Line
+	6750 1900 7000 1900
+Connection ~ 7000 1900
+Wire Wire Line
+	5300 1550 5600 1550
+Wire Wire Line
+	5950 1550 6200 1550
+Wire Wire Line
+	6200 1550 6200 1400
+Wire Wire Line
+	5600 1550 5600 1400
+Connection ~ 5600 1550
+Wire Wire Line
+	5600 1550 5750 1550
 $EndSCHEMATC
