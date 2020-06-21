@@ -1401,7 +1401,7 @@
   (segment (start 110.49125 84.1525) (end 110.475 84.16875) (width 0.254) (layer B.Cu) (net 20))
   (segment (start 114.3 84.1525) (end 110.49125 84.1525) (width 0.254) (layer B.Cu) (net 20))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EEEE022) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
